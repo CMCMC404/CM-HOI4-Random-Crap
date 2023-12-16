@@ -1,2 +1,2 @@
-# CM-HOI4-Random-Crap
-My random hoi4 ideas
+# My random hoi4 ideas
+Wip
