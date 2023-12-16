@@ -12,7 +12,7 @@ Click on pallate to select desired color( options are RGBCYM, 6 in total ) and c
 
 Then use some color key to remove the background and do what ever you want.
 
-For example use color range in photoshop and then use hue to desature bg's color.
+For example use color range in photoshop to remove most of the background, and then use hue to desature bg's color to clean up the edge.
 
 Finally add your own background and you'd get sth like this:
 
