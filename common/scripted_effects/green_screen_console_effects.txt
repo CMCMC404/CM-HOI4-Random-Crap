@@ -1,0 +1,14 @@
+# effects that starts with name d_ will be available as console command
+# use "effect_name_DESC" to define a description
+
+d_dbg_gs = {
+	if = {
+		limit = { has_global_flag = show_green_btn }
+		clr_global_flag = show_green_btn
+		log = "hide green screen button"
+	}
+	else = {
+		set_global_flag = show_green_btn
+		log = "show green screen button"
+	}
+}

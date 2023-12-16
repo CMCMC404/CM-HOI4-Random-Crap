@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = { 
+		name = "GFX_green_btn"
+		texturefile = "gfx/interface/green_btn.png"
+	}
+	spriteType = { 
+		name = "GFX_bg_color_stripe"
+		texturefile = "gfx/interface/bg_color_stripe.png"
+		noOfFrames = 6
+	}
+
+}

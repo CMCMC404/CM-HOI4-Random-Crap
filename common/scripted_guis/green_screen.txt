@@ -1,0 +1,58 @@
+
+scripted_gui = {
+    
+	cm_green_bg = {
+        window_name = cm_green_bg
+        context_type = player_context
+		parent_window_token = top_bar
+		
+		visible = {
+		}
+		triggers = {
+			cm_green_bg_visible = { has_global_flag = show_green_bg }
+		}
+		effects = {
+		}
+		properties = {
+			cm_green_bg = {
+				image = "GFX_bg_color_stripe"
+				frame = var:global.green_screen_color
+			}
+		}
+	}
+
+	cm_green_btn = {
+        window_name = cm_green_btn 
+        context_type = player_context
+		
+		visible = {
+			has_global_flag = show_green_btn 
+		}
+		triggers = {
+		}
+		effects = {
+			cm_green_bg_btn_click = {
+				if = {
+					limit = { has_global_flag = show_green_bg }
+					clr_global_flag = show_green_bg
+				}
+				else = {
+					set_global_flag = show_green_bg
+				}
+				#default color is green
+				set_variable = { global.green_screen_color = 3 }
+			}
+			#list of colors in photoshop's hue&saturation
+			cm_red_btn_click = { set_variable = { global.green_screen_color = 1 } }
+			cm_yellow_btn_click = { set_variable = { global.green_screen_color = 2 } }
+			cm_green_btn_click = { set_variable = { global.green_screen_color = 3 } }
+			cm_cyan_btn_click = { set_variable = { global.green_screen_color = 4 } }
+			cm_blue_btn_click = { set_variable = { global.green_screen_color = 5 } }
+			cm_magenta_btn_click = { set_variable = { global.green_screen_color = 6 } }
+		}
+		
+	}
+	
+	
+	
+}

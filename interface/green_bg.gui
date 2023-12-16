@@ -1,0 +1,87 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "cm_green_bg"
+		size = { width = 100 height = 100 }
+		position = { x = 0   y = 0 }  
+	
+		iconType = {
+			name = "cm_green_bg"
+			spriteType = "GFX_bg_color_stripe"
+			position = { x = -1000 y = -1000  }
+			scale = 110 
+			#frame = 3
+			alwaystransparent = yes  
+		}
+
+	}
+	containerWindowType = {
+		name = "cm_green_btn"
+		size = { width = 100 height = 180 }
+		position = { x = 0   y = 200 }  
+		moveable = yes  
+		
+		background = {
+			name = "Background"		
+			quadTextureSprite ="GFX_tiled_window"
+			alwaystransparent = no
+		}
+
+		buttonType = {
+			name = "cm_green_bg_btn"
+			position = {x=17  y=18}
+			spriteType = "GFX_green_btn"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "cm_red_btn"
+			position = {x=25  y=80}
+			spriteType = "GFX_bg_color_stripe"
+			clicksound = click_default
+			frame = 1
+			scale = 0.20
+		}
+		buttonType = {
+			name = "cm_yellow_btn"
+			position = {x=55  y=80}
+			spriteType = "GFX_bg_color_stripe"
+			clicksound = click_default
+			frame = 2
+			scale = 0.20
+		}
+		buttonType = {
+			name = "cm_green_btn"
+			position = {x=25  y=110}
+			spriteType = "GFX_bg_color_stripe"
+			clicksound = click_default
+			frame = 3
+			scale = 0.20
+		}
+		buttonType = {
+			name = "cm_cyan_btn"
+			position = {x=55  y=110}
+			spriteType = "GFX_bg_color_stripe"
+			clicksound = click_default
+			frame = 4
+			scale = 0.20
+		}
+		buttonType = {
+			name = "cm_blue_btn"
+			position = {x=25  y=140}
+			spriteType = "GFX_bg_color_stripe"
+			clicksound = click_default
+			frame = 5
+			scale = 0.20
+		}
+		buttonType = {
+			name = "cm_magenta_btn"
+			position = {x=55  y=140}
+			spriteType = "GFX_bg_color_stripe"
+			clicksound = click_default
+			frame = 6
+			scale = 0.20
+		}
+
+	}
+	
+}
