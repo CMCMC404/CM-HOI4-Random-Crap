@@ -8,7 +8,8 @@
   
  **2. Radar Graph Scripted Gui**
 
-![image](https://github.com/CMCMC404/CM-HOI4-Random-Crap/assets/69458655/578963a8-1d2d-4531-8046-c6bcc21f70a2)
+![image](https://github.com/CMCMC404/CM-HOI4-Random-Crap/assets/69458655/e733758b-07d3-41b8-8a10-f6d182696ed7)
+
 
   WIPLINK 
   Highly inspired by [flaxbeard's project](https://github.com/Flaxbeard/hoi4-scripted-graphs/tree/main), check link for more details.
