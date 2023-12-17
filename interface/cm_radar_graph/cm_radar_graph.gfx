@@ -1,0 +1,41 @@
+spriteTypes = {
+
+	#This is where you define the slices of a n-sided polygon
+	#texture path decides the color and alpha while effect file determined the correct angle to draw
+	spriteType = {
+		name = "GFX_radar_icon_06_yellow"
+		textureFile = "gfx/radar_graph/radar_yellow.dds" 
+		noOfFrames = 10000    
+		effectFile = "gfx/FX/radar_graph/cm_radar_graph_06.lua"
+		legacy_lazy_load = no 
+	} 
+	spriteType = {
+		name = "GFX_radar_icon_06_purple"
+		textureFile = "gfx/radar_graph/radar_purple.dds" 
+		noOfFrames = 10000    
+		effectFile = "gfx/FX/radar_graph/cm_radar_graph_06.lua"
+		legacy_lazy_load = no 
+	}  
+	spriteType = {
+		name = "GFX_radar_icon_03_red"
+		textureFile = "gfx/radar_graph/radar_red.dds" 
+		noOfFrames = 10000    
+		effectFile = "gfx/FX/radar_graph/cm_radar_graph_03.lua"
+		legacy_lazy_load = no 
+	}  
+	spriteType = {
+		name = "GFX_radar_icon_04_green"
+		textureFile = "gfx/radar_graph/radar_green.dds" 
+		noOfFrames = 10000    
+		effectFile = "gfx/FX/radar_graph/cm_radar_graph_04.lua"
+		legacy_lazy_load = no 
+	} 
+	spriteType = {
+		name = "GFX_radar_icon_05_blue"
+		textureFile = "gfx/radar_graph/radar_blue.dds" 
+		noOfFrames = 10000    
+		effectFile = "gfx/FX/radar_graph/cm_radar_graph_05.lua"
+		legacy_lazy_load = no 
+	}
+ 
+}

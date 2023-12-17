@@ -1,0 +1,10 @@
+spriteTypes = {
+
+	spriteType = { 
+		name = "GFX_jojo_example_bg"
+		textureFile = "gfx/jojo_example_bg.png"
+		legacy_lazy_load = no 
+	}
+
+
+}

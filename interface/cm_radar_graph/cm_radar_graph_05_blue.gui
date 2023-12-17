@@ -1,0 +1,48 @@
+guiTypes = {
+	containerWindowType = {
+		name = "radar_pent_group_blue"
+		position = { x = 0 y = 0 }	
+		size = { width = 200 height= 200 }
+		clipping = no
+		 
+		iconType = { 
+			name = "radar_icon_5_1"
+			spriteType = "GFX_radar_icon_05_blue" 
+			position = { x = 0 y = 0 }
+			centerposition = yes
+			orientation = CENTER
+		}
+		iconType = {
+			name = "radar_icon_5_2"
+			spriteType = "GFX_radar_icon_05_blue"
+			position = { x = 0 y =  0 }
+			rotation = 1.256637
+			centerposition = yes
+			orientation = CENTER
+		}
+		iconType = {
+			name = "radar_icon_5_3"
+			spriteType = "GFX_radar_icon_05_blue"
+			position = { x = 0 y =  0 }
+			rotation = 2.513274
+			centerposition = yes
+			orientation = CENTER
+		}
+		iconType = {
+			name = "radar_icon_5_4"
+			spriteType = "GFX_radar_icon_05_blue"
+			position = { x = 0 y =  0 }
+			rotation = 3.769911
+			centerposition = yes
+			orientation = CENTER
+		}
+		iconType = {
+			name = "radar_icon_5_5"
+			spriteType = "GFX_radar_icon_05_blue"
+			position = { x = 0 y =  0 }
+			rotation = 5.026548
+			centerposition = yes
+			orientation = CENTER
+		}
+	}
+}

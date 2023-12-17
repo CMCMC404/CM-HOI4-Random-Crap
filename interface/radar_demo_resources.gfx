@@ -1,0 +1,32 @@
+spriteTypes = {
+
+	#backgrounds for charts
+	spriteType = { 
+		name = "GFX_bg_black_200"
+		textureFile = "gfx/bg_black_200.png"
+		legacy_lazy_load = no 
+	}
+	spriteType = { 
+		name = "GFX_radar_icon_3_bg"
+		textureFile = "gfx/radar_bg_3.png"
+		legacy_lazy_load = no 
+	}
+	spriteType = { 
+		name = "GFX_radar_icon_4_bg"
+		textureFile = "gfx/radar_bg_4.png"
+		legacy_lazy_load = no 
+	}
+	spriteType = { 
+		name = "GFX_radar_icon_5_bg"
+		textureFile = "gfx/radar_bg_5.png"
+		legacy_lazy_load = no 
+	}
+ 
+	spriteType = { 
+		name = "GFX_radar_icon_6_bg"
+		textureFile = "gfx/radar_bg_6.png"
+		legacy_lazy_load = no 
+	}
+
+
+}

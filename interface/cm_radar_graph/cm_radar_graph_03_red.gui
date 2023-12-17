@@ -1,0 +1,34 @@
+guiTypes = {
+	containerWindowType = {
+		name = "radar_tri_group_red"
+		position = { x = 0 y = 0 }	
+		size = { width = 200 height= 200 }
+		clipping = no
+		 
+		iconType = { 
+			name = "radar_icon_3_1"
+			spriteType = "GFX_radar_icon_03_red" 
+			position = { x = 0 y = 0 }
+			centerposition = yes
+			orientation = CENTER
+		}
+
+		iconType = {
+			name = "radar_icon_3_2"
+			spriteType = "GFX_radar_icon_03_red"
+			position = { x = 0 y =  0 }
+			rotation = 2.094395
+			centerposition = yes
+			orientation = CENTER
+		}
+
+		iconType = {
+			name = "radar_icon_3_3"
+			spriteType = "GFX_radar_icon_03_red"
+			position = { x = 0 y =  0 }
+			rotation = 4.188790 
+			centerposition = yes
+			orientation = CENTER
+		}
+	}
+}

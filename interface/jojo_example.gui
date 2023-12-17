@@ -1,0 +1,40 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "jojo_example"
+		position = { x = 10 y = 46 }	
+		size = { width = 170 height= 170 }
+		clipping = no
+		 
+		background = {
+			name = "background"		
+			quadTextureSprite = "GFX_tiled_plain_bg" 
+		}
+		iconType = { 
+			name = "jojo_example_bg"
+			spriteType = "GFX_jojo_example_bg" 
+			position = { x = 10 y = 10 } 
+			alwaystransparent = yes
+		}
+		containerWindowType = {
+			name = "jojo_example_dummy"
+			position = { x = 35 y = 35 }	
+			size = { width = 1 height= 1 }
+			scale = 0.5
+		}
+	}
+
+	containerWindowType = {
+		name = "jojo_example_button"
+		position = { x = 12 y = 22 }	
+		size = { width = 1 height= 1 }
+
+		buttonType = {
+			name = "jojo_example_btn"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_add_one"
+			clicksound = click_default
+		}
+	}
+
+}

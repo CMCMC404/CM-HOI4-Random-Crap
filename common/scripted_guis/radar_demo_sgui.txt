@@ -1,0 +1,216 @@
+scripted_gui = {
+	radar_main_view_demo_sgui = {
+		window_name = "radar_test"
+		context_type = player_context
+
+		visible = {
+			#has_country_flag = 
+		}
+
+		effects = {
+			radar_btn_click = {
+				#TODO
+				clear_array = ROOT.radar_frame
+				clear_array = ROOT.radar_array
+				set_variable = { i = 0 }
+
+				while_loop_effect = {
+					limit = {
+						check_variable = { i < 6 }
+					}
+					set_variable_to_random = {
+						var = ROOT.radar_randomizer
+						min = 0
+						max = 99
+						integer = yes
+					}
+					add_to_array = { ROOT.radar_array = ROOT.radar_randomizer }
+					add_to_variable = { i = 1 }
+				}
+				
+				set_variable = { i = 0 }
+				while_loop_effect = {
+					limit = {
+						check_variable = { i < 6 }
+					}
+					set_variable = { j = i }
+					add_to_variable = { j = -1 }
+
+					set_variable = { v = radar_array^num }
+					add_to_variable = { v = -1 }
+
+					if = {
+						limit = { check_variable = { i = 0 } }
+						set_variable = { left = ROOT.radar_array^5 }
+					}
+
+					else = {				
+						set_variable = { left = ROOT.radar_array^j }				
+					}
+					
+					set_variable = { right = ROOT.radar_array^i }
+					multiply_variable = { right = 100 }
+					set_variable = { ROOT.radar_frame^i = left }
+					add_to_variable = { ROOT.radar_frame^i = right }
+
+					add_to_variable = { i = 1 }
+				}
+				set_variable = { left = ROOT.radar_array^2 }
+				set_variable = { right = ROOT.radar_array^0 }
+				multiply_variable = { right = 100 }
+				set_variable = { radar_frame_3 = left }
+				add_to_variable = { radar_frame_3 = right }
+
+				set_variable = { left = ROOT.radar_array^3 }
+				set_variable = { right = ROOT.radar_array^0 }
+				multiply_variable = { right = 100 }
+				set_variable = { radar_frame_4 = left }
+				add_to_variable = { radar_frame_4 = right }
+
+				set_variable = { left = ROOT.radar_array^4 }
+				set_variable = { right = ROOT.radar_array^0 }
+				multiply_variable = { right = 100 }
+				set_variable = { radar_frame_5 = left }
+				add_to_variable = { radar_frame_5 = right }
+
+
+			}
+		}
+
+		properties = { 
+		}
+	}
+
+	hexagon_demo_sgui = {
+		window_name = "radar_hex_group_yellow"
+		context_type = player_context
+		parent_window_name = "radar_hex_demo_dummy"		
+		visible = {
+		}
+
+		effects = {
+		}
+		properties = {
+			 radar_icon_6_1 = {
+			 	frame = ROOT.radar_frame^0 
+			 }
+			 radar_icon_6_2 = {
+			 	frame = ROOT.radar_frame^1 
+			 }
+			 radar_icon_6_3 = {
+			 	frame = ROOT.radar_frame^2 
+			 }
+			 radar_icon_6_4 = {
+			 	frame = ROOT.radar_frame^3 
+			 }
+			 radar_icon_6_5 = {
+			 	frame = ROOT.radar_frame^4 
+			 }
+			 radar_icon_6_6 = {
+			 	frame = ROOT.radar_frame^5
+			 }
+		}
+	}
+	half_sized_hexagon_demo_sgui = {
+		window_name = "radar_hex_group_yellow"
+		context_type = player_context
+		parent_window_name = "radar_hex_demo_dummy_half"		
+		visible = { 
+		}
+
+		effects = {
+		}
+		properties = {
+			 radar_icon_6_3 = {
+			 	frame = ROOT.radar_frame^0 
+			 }
+			 radar_icon_6_4 = {
+			 	frame = ROOT.radar_frame^1 
+			 }
+			 radar_icon_6_5 = {
+			 	frame = ROOT.radar_frame^2 
+			 }
+			 radar_icon_6_6 = {
+			 	frame = ROOT.radar_frame^3 
+			 }
+			 radar_icon_6_1 = {
+			 	frame = ROOT.radar_frame^4 
+			 }
+			 radar_icon_6_2 = {
+			 	frame = ROOT.radar_frame^5
+			 }
+		}
+	}
+	triangle_demo_sgui = {
+		window_name = "radar_tri_group_red"
+		context_type = player_context
+		parent_window_name = "radar_dummy_3"		
+		visible = {
+		}
+
+		effects = {  
+		}
+		properties = {
+			 radar_icon_3_1 = {
+			 	frame = radar_frame_3
+			 }
+			 radar_icon_3_2 = {
+			 	frame = ROOT.radar_frame^1 
+			 }
+			 radar_icon_3_3 = {
+			 	frame = ROOT.radar_frame^2 
+			 }
+		}
+	}
+	quadrilateral_demo_sgui = {
+		window_name = "radar_quad_group_green"
+		context_type = player_context
+		parent_window_name = "radar_dummy_4"		
+		visible = {
+		}
+
+		effects = {  
+		}
+		properties = {
+			 radar_icon_4_1 = {
+			 	frame = radar_frame_4
+			 }
+			 radar_icon_4_2 = {
+			 	frame = ROOT.radar_frame^1 
+			 }
+			 radar_icon_4_3 = {
+			 	frame = ROOT.radar_frame^2 
+			 }
+			 radar_icon_4_4 = {
+			 	frame = ROOT.radar_frame^3 
+			 }
+		}
+	}
+	pentagon_demo_sgui = { 
+		window_name = "radar_pent_group_blue"
+		context_type = player_context
+		parent_window_name = "radar_dummy_5"		
+		visible = {
+		}
+
+		effects = {  
+		}
+		properties = {
+			 radar_icon_5_1 = {
+			 	frame = radar_frame_5 
+			 }
+			 radar_icon_5_2 = {
+			 	frame = ROOT.radar_frame^1 
+			 }
+			 radar_icon_5_3 = {
+			 	frame = ROOT.radar_frame^2 
+			 }
+			 radar_icon_5_4 = {
+			 	frame = ROOT.radar_frame^3 
+			 }
+			 radar_icon_5_5 = {
+			 	frame = ROOT.radar_frame^4 
+			 }
+		}
+	}
+}

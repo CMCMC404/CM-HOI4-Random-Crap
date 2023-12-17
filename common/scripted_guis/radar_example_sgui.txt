@@ -1,0 +1,85 @@
+scripted_gui = {
+
+	jojo_example_sgui = {
+		window_name = "jojo_example"
+		context_type = player_context
+        parent_window_token = politics_tab
+		visible = {
+            has_country_flag = jojo_ui_open
+		}
+		effects = {
+		}
+		properties = { 
+		}
+	}
+    jojo_example_dummy_sgui = {
+		window_name = "radar_hex_group_purple"
+		context_type = player_context
+        parent_window_name = "jojo_example_dummy"
+		visible = {
+		}
+		effects = {
+		}
+		properties = { 
+            radar_icon_6_1 = { frame =  jojo_stats_output^0  }
+            radar_icon_6_2 = { frame =  jojo_stats_output^1  }
+            radar_icon_6_3 = { frame =  jojo_stats_output^2  }
+            radar_icon_6_4 = { frame =  jojo_stats_output^3  }
+            radar_icon_6_5 = { frame =  jojo_stats_output^4  }
+            radar_icon_6_6 = { frame =  jojo_stats_output^5  }
+		}
+	}
+    jojo_example_button_sgui = {
+		window_name = "jojo_example_button"
+		context_type = player_context
+        parent_window_token = politics_tab
+		visible = {
+		}
+		effects = {
+            jojo_example_btn_click = {
+                # toggle up visibility
+                if = {
+                    limit = {
+                        has_country_flag = jojo_ui_open
+                    }
+                    clr_country_flag = jojo_ui_open
+                }
+                else = {
+                    set_country_flag = jojo_ui_open
+                }
+                # *counter clockwise*, add your input to a input array
+                add_to_array = { ROOT.jojo_stats_input = 67 } #B
+                add_to_array = { ROOT.jojo_stats_input = 50 } #C
+                add_to_array = { ROOT.jojo_stats_input = 16 } #E
+                add_to_array = { ROOT.jojo_stats_input = 84 } #A
+                add_to_array = { ROOT.jojo_stats_input = 67 } #B
+                add_to_array = { ROOT.jojo_stats_input = 16 } #E
+                # for loop from 0 to n where n equals the sides of you polygon
+                for_loop_effect = {
+                    start = 0 
+                    end = 6
+                    value = i
+                    # j = i - 1 to locate the previous array item
+                    # and when i = 0 you should set j to the last index of the input array instead
+                    set_variable = { j = i }
+					add_to_variable = { j = -1 }
+                    if = {
+						limit = { check_variable = { i = 0 } }
+						set_variable = { left = ROOT.jojo_stats_input^5 }
+					}
+					else = {				
+						set_variable = { left = ROOT.jojo_stats_input^j }				
+					}
+                    # get the current array item, times 100, then add it to the previous array item
+                    set_variable = { right = ROOT.jojo_stats_input^i }
+					multiply_variable = { right = 100 }
+					set_variable = { ROOT.jojo_stats_output^i = left }
+					add_to_variable = { ROOT.jojo_stats_output^i = right }
+                }
+            }
+		}
+		properties = { 
+		}
+	}
+
+}

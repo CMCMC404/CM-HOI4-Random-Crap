@@ -1,0 +1,9 @@
+version="0.1"
+tags={
+	"Graphics"
+}
+dependencies={
+	"00_null"
+}
+name="00_graph_shader"
+supported_version="1.13.*"
